@@ -4,10 +4,9 @@ The primary use of this program has been to compare _Alu_ loci via BLAT of user-
 
 1. You will need an input text file (coordinate_file) with one line for each locus of interest that includes an additional 600 bp on either side of the insertions. The flanking sequence is necessary to properly obtain and align orthologous sequence from the comparison genome assemblies. Each locus should be on one line, in the format chromosome:start-stop, e.g.:  
    \
-    chr5:163793654-1637948654
-   chr6:678090-679920907
-
-…….
+    chr5:163793654-1637948654 </br>
+    chr6:678090-679920907 </br>
+    …….
 
 2. Paths to several programs have been hard-coded. Therefore, these lines need to be changed before running this pipeline. The lines in each program are as follows:
    1. Line 153 of blatGenomes1.py currently indicates the muscle program is: muscle3.8.31_i86linux64. Not only should the MUSCLE alignment be in your PATH, but should also be the appropriate name for the version of MUSCLE you have installed on your computer.
